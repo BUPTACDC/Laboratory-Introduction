@@ -7,22 +7,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="nav-item">首页</a>
+            <a href="#research" class="nav-item">研究方向</a>
+            <a href="#members" class="nav-item">成员</a>
+            <a href="#publications" class="nav-item">成果</a>
+        </div>
+    </nav>
+
+    <div id="home" class="container">
         <header>
             <h1>实验室介绍</h1>
-            <!-- 这里可以添加导航栏、Logo等 -->
         </header>
 
         <!-- 图片轮播 -->
         <div id="carousel" class="carousel">
             <img src="img/img1.png" alt="Image 1" class="carousel-item active">
-            <img src="img/img2.png" alt="Image 2" class="carousel-item">
-            <img src="img/img3.jpg" alt="Image 3" class="carousel-item">
-            <!-- 添加更多图片 -->
+            <!-- 添加更多图片，确保与下方的indicator数量相匹配 -->
+            <!-- 控制按钮 -->
+            <a class="carousel-control prev" onclick="prevSlide()">&#10094;</a>
+            <a class="carousel-control next" onclick="nextSlide()">&#10095;</a>
+            <!-- 指示器 -->
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="setCurrentSlide(0)"></span>
+                <!-- 添加更多指示器 -->
+            </div>
         </div>
 
-        <!-- 实验室介绍的其他部分，如方向、成员、成果等 -->
+        <!-- 实验室介绍的其他部分 -->
     </div>
+
+    <!-- 其他页面内容 -->
 
     <script src="script.js"></script>
 </body>
