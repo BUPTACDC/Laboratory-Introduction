@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,40 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>实验室名称</h1>
-        <nav>
-            <ul>
-                <li><a href="#direction">实验室方向</a></li>
-                <li><a href="#members">成员</a></li>
-                <li><a href="#research">科研成果</a></li>
-                <li><a href="#projects">项目</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <h1>实验室介绍</h1>
+            <!-- 这里可以添加导航栏、Logo等 -->
+        </header>
 
-    <section id="direction">
-        <h2>实验室方向</h2>
-        <p>这里是实验室的研究方向介绍。</p>
-    </section>
+        <!-- 图片轮播 -->
+        <div id="carousel" class="carousel">
+            <img src="image1.jpg" alt="Image 1" class="carousel-item active">
+            <img src="image2.jpg" alt="Image 2" class="carousel-item">
+            <img src="image3.jpg" alt="Image 3" class="carousel-item">
+            <!-- 添加更多图片 -->
+        </div>
 
-    <section id="members">
-        <h2>成员</h2>
-        <!-- 成员列表 -->
-    </section>
+        <!-- 实验室介绍的其他部分，如方向、成员、成果等 -->
+    </div>
 
-    <section id="research">
-        <h2>科研成果</h2>
-        <!-- 科研成果列表 -->
-    </section>
-
-    <section id="projects">
-        <h2>项目</h2>
-        <!-- 项目列表 -->
-    </section>
-
-    <footer>
-        <p>版权所有 &copy; 2024 实验室名称</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
