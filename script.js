@@ -17,7 +17,10 @@ const nextSlide = () => {
 };
 
 // 页面加载时立即显示第一张图片
-document.addEventListener('DOMContentLoaded', updateCarousel);
+document.addEventListener('DOMContentLoaded', () => {
+    updateCarousel();
+    setInterval(nextSlide, 5000); // 自动轮播间隔，例如 5000 毫秒（5秒）
+});
 
 // 自动轮播间隔，例如 5000 毫秒（5秒）
 setInterval(nextSlide, 5000);

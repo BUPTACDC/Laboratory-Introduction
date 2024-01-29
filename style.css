@@ -20,6 +20,7 @@ header {
     position: relative;
     width: 100%;
     overflow: hidden;
+    min-height: 400px; /* 设定一个最小高度 */
 }
 
 .carousel-item {
