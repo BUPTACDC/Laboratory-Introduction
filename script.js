@@ -32,5 +32,5 @@ const prevSlide = () => {
 // 初始化轮播图
 document.addEventListener('DOMContentLoaded', () => {
     updateCarousel();
-    setInterval(nextSlide, 5000); // 自动轮播间隔，例如 5000 毫秒（5秒）
+    setInterval(nextSlide, 5000); // 自动轮播间隔
 });

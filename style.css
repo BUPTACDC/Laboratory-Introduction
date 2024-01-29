@@ -15,11 +15,12 @@ body {
 
 /* 导航栏样式 */
 .navbar {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.8);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    padding: 10px 0; /* 添加内边距 */
 }
 
 .nav-item {
@@ -39,6 +40,7 @@ body {
     position: relative;
     width: 100%;
     overflow: hidden;
+    min-height: 300px; /* 设置最小高度 */
 }
 
 .carousel-item {
@@ -92,3 +94,13 @@ body {
 }
 
 /* 其他内容 */
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .nav-item {
+        padding: 5px 10px; /* 调整导航项的内边距 */
+    }
+
+    .carousel {
+        min-height: 200px; /* 小屏幕上的轮播图最小高度 */
+    }
+}
