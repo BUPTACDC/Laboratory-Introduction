@@ -1,41 +1,35 @@
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-header a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-header ul {
-    padding: 0;
-    list-style: none;
-}
-
-header li {
-    display: inline;
-}
-
-section {
+    background: #f8f8f7;
     padding: 20px;
-    margin: 20px 0;
+    text-align: center;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
+
+.carousel-item {
+    width: 100%;
+    display: none;
+    position: absolute;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+/* 根据 Apple 官网风格设计的其他样式 */
