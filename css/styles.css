@@ -34,29 +34,50 @@ main {
     text-align: center;
 }
 
-#carousel {
+#members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.members-container {
+    display: flex;
     width: 80%;
     margin: 20px auto;
 }
 
-#carousel img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    max-height: 500px; /* 设置图片的最大高度 */
+.members-list {
+    flex: 1;
+    margin-right: 20px;
 }
 
-#intro {
-    margin: 20px auto;
-    padding: 20px;
+.members-list h2, .members-list h3 {
+    margin: 10px 0;
+}
+
+.members-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.members-list li {
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.member-details {
+    flex: 2;
     background-color: white;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.keywords {
-    font-weight: bold;
-    color: #4CAF50;
+.member-details img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 footer {

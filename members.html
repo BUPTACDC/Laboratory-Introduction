@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>成员介绍</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
@@ -20,11 +21,62 @@
     <main>
         <section id="members">
             <h1>成员介绍</h1>
-            <p>这里是实验室成员的介绍。</p>
+            <div class="members-container">
+                <aside class="members-list">
+                    <h2>导师</h2>
+                    <ul id="mentor-list">
+                        <li data-id="mentor1">导师1</li>
+                        <li data-id="mentor2">导师2</li>
+                    </ul>
+                    <h2>博士生</h2>
+                    <div id="phd-list">
+                        <h3>2016级</h3>
+                        <ul>
+                            <li data-id="phd2016_1">博士生1</li>
+                            <li data-id="phd2016_2">博士生2</li>
+                        </ul>
+                        <h3>2017级</h3>
+                        <ul>
+                            <li data-id="phd2017_1">博士生1</li>
+                            <li data-id="phd2017_2">博士生2</li>
+                        </ul>
+                        <!-- 添加更多年级和学生 -->
+                    </div>
+                    <h2>研究生</h2>
+                    <div id="master-list">
+                        <h3>2016级</h3>
+                        <ul>
+                            <li data-id="master2016_1">研究生1</li>
+                            <li data-id="master2016_2">研究生2</li>
+                        </ul>
+                        <h3>2017级</h3>
+                        <ul>
+                            <li data-id="master2017_1">研究生1</li>
+                            <li data-id="master2017_2">研究生2</li>
+                        </ul>
+                        <!-- 添加更多年级和学生 -->
+                    </div>
+                </aside>
+                <section class="member-details">
+                    <div id="member-content">
+                        <!-- 默认显示第一个导师的信息 -->
+                        <img src="assets/images/mentor1.jpg" alt="导师1" id="member-photo">
+                        <h2 id="member-name">导师1</h2>
+                        <p id="member-research">研究方向：人工智能、机器学习</p>
+                        <p id="member-bio">自我介绍：这是导师1的自我介绍。</p>
+                        <h3>部分成果</h3>
+                        <ul id="member-achievements">
+                            <li>成果1</li>
+                            <li>成果2</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 实验室. 版权所有.</p>
     </footer>
+    <script src="js/members.js"></script>
 </body>
 </html>
