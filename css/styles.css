@@ -34,6 +34,24 @@ main {
     text-align: center;
 }
 
+#carousel {
+    width: 80%;
+    margin: 20px auto;
+}
+
+#carousel img {
+    width: 100%;
+    height: auto;
+}
+
+#intro {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 footer {
     background-color: #4CAF50;
     color: white;
