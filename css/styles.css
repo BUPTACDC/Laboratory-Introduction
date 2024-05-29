@@ -37,7 +37,6 @@ main {
 #carousel {
     width: 80%;
     margin: 20px auto;
-    overflow: hidden;
 }
 
 .carousel-item {
