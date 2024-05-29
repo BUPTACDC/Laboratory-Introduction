@@ -42,10 +42,20 @@ $(document).ready(function() {
             member.achievements.forEach(achievement => {
                 $('#member-achievements').append(`<li>${achievement}</li>`);
             });
+
+            // 清除之前的选中状态
+            $('.members-list li').removeClass('selected');
+            // 设置当前选中的成员
+            $(`[data-id="${id}"]`).addClass('selected');
         }
     }
 
-    $('.members-list li, .members-list ul li').click(function() {
+    $('.members-list h2, .members-list h3').click(function() {
+        $(this).next('ul').slideToggle();
+        $(this).toggleClass('active');
+    });
+
+    $('.members-list li').click(function() {
         const memberId = $(this).data('id');
         displayMember(memberId);
     });

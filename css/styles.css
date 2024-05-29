@@ -34,12 +34,42 @@ main {
     text-align: center;
 }
 
-#members {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#carousel {
+    width: 80%;
+    margin: 20px auto;
 }
 
+#carousel img {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* 设置图片的最大高度 */
+    object-fit: cover;
+}
+
+#intro {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.keywords {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* 成员介绍页面的样式 */
 .members-container {
     display: flex;
     width: 80%;
@@ -53,16 +83,26 @@ main {
 
 .members-list h2, .members-list h3 {
     margin: 10px 0;
+    cursor: pointer;
 }
 
 .members-list ul {
     list-style: none;
     padding: 0;
+    display: none; /* 默认隐藏年级和学生列表 */
 }
 
 .members-list li {
     cursor: pointer;
     padding: 5px 0;
+}
+
+.members-list .active ul {
+    display: block; /* 点击后展开年级和学生列表 */
+}
+
+.members-list .selected {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .member-details {
@@ -78,14 +118,4 @@ main {
     height: auto;
     border-radius: 8px;
     margin-bottom: 20px;
-}
-
-footer {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
