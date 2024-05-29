@@ -43,7 +43,7 @@ main {
     display: flex !important;
     justify-content: center;
     align-items: center;
-    height: 500px; /* 设置图片的高度 */
+    height: 200px;/* 设置图片的最大高度 */
 }
 
 .slick-slide img {
@@ -127,24 +127,48 @@ footer {
     margin-bottom: 20px;
 }
 
-/* ... 之前的样式保持不变 ... */
-
-#research h2, #research h3 {
-    margin-top: 20px;
+/* 科研成果页面的样式 */
+.research-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-#research ul {
+.research-block {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.block-header {
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.block-content {
+    max-height: 300px; /* 设置内容块的最大高度 */
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.block-content ul {
     list-style: none;
     padding: 0;
 }
 
-#research ul li {
+.block-content ul li {
     background-color: #f0f0f0;
     margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
 }
 
-#research ul li strong {
+.block-content ul li strong {
     color: #333;
 }
