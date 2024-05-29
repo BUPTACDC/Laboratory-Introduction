@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>实验室首页</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 </head>
 <body>
     <header>
@@ -18,13 +20,36 @@
         </nav>
     </header>
     <main>
-        <section id="welcome">
-            <h1>欢迎来到我们的实验室</h1>
-            <p>这是我们实验室的介绍页面。</p>
+        <section id="carousel">
+            <div class="carousel">
+                <div><img src="assets/images/lab1.jpg" alt="实验室图片1"></div>
+                <div><img src="assets/images/lab2.jpg" alt="实验室图片2"></div>
+                <div><img src="assets/images/lab3.jpg" alt="实验室图片3"></div>
+            </div>
+        </section>
+        <section id="intro">
+            <h1>实验室名称</h1>
+            <p>研究方向：人工智能、机器学习、大数据、计算机视觉、自然语言处理</p>
+            <p>欢迎来到我们的实验室。我们致力于推动科技前沿，专注于人工智能和相关领域的研究。</p>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 实验室. 版权所有.</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        });
+    </script>
 </body>
 </html>
