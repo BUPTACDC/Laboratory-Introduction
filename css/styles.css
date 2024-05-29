@@ -43,7 +43,7 @@ main {
     display: flex !important;
     justify-content: center;
     align-items: center;
-    max-height: 500px; /* 设置图片的最大高度 */
+    height: 500px; /* 设置图片的高度 */
 }
 
 .slick-slide img {
@@ -125,4 +125,26 @@ footer {
     height: auto;
     border-radius: 8px;
     margin-bottom: 20px;
+}
+
+/* ... 之前的样式保持不变 ... */
+
+#research h2, #research h3 {
+    margin-top: 20px;
+}
+
+#research ul {
+    list-style: none;
+    padding: 0;
+}
+
+#research ul li {
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#research ul li strong {
+    color: #333;
 }
