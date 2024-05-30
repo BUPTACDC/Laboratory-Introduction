@@ -7,9 +7,10 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background: linear-gradient(to bottom, #4CAF50, #6FBF73);
     color: white;
     padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -36,8 +37,8 @@ main {
 
 #carousel {
     width: 80%;
-    height: 300px;
     margin: 20px auto;
+    height: 300px;/* 设置图片的最大高度 */
 }
 
 .slick-slide {
@@ -48,7 +49,7 @@ main {
 
 .slick-slide img {
     max-width: 100%;
-    max-height: 300px; /* 设置图片的最大高度 */
+    max-height: 300px; 
     object-fit: cover;
 }
 
@@ -84,6 +85,7 @@ footer {
 
 .members-list {
     flex: 1;
+    width: 100px;
     margin-right: 20px;
 }
 
@@ -141,7 +143,7 @@ footer {
     max-width: 300px;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
@@ -149,6 +151,7 @@ footer {
     padding: 10px;
     color: white;
     text-align: center;
+    background: linear-gradient(to bottom, #2E7D32, #4CAF50); /* 顶部深绿色向下渐变浅绿色 */
 }
 
 .block-content {
