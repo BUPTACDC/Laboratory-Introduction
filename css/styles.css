@@ -169,7 +169,6 @@ footer {
 .block-content ul li strong {
     color: #333;
 }
-
 /* ...前面的样式保持不变... */
 
 .language-switcher {
@@ -189,4 +188,66 @@ footer {
 
 .language-switcher button:hover {
     background-color: #f0f0f0;
+}
+
+.main {
+    padding: 20px;
+    text-align: center;
+}
+
+#members {
+    display: flex;
+    justify-content: center;
+}
+
+.members-container {
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.members-list {
+    flex: 1;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.members-list h2, .members-list h3 {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.members-list ul {
+    list-style: none;
+    padding: 0;
+    display: none; /* 默认隐藏年级和学生列表 */
+}
+
+.members-list li {
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.members-list .active ul {
+    display: block; /* 点击后展开年级和学生列表 */
+}
+
+.members-list .selected {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #e0e0e0;
+}
+
+.member-details {
+    flex: 2;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.member-details img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
