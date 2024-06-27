@@ -82,4 +82,23 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // 更新成员选择列表
+    function updateMemberList() {
+        const lists = document.querySelectorAll('#mentor-list, #phd-list ul, #master-list ul');
+        lists.forEach(list => {
+            list.querySelectorAll('li').forEach(item => {
+                const zhText = item.getAttribute('data-zh');
+                const enText = translations[zhText];
+                if (isChinese) {
+                    item.textContent = zhText;
+                } else {
+                    item.textContent = enText;
+                }
+            });
+        });
+    }
+
+    // 初始调用成员列表更新
+    updateMemberList();
 });
