@@ -33,13 +33,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     switchLangButton.addEventListener('click', function() {
-        if (isChinese) {
-            switchToEnglish();
-        } else {
-            switchToChinese();
-        }
         isChinese = !isChinese;
         localStorage.setItem('isChinese', isChinese);
+        location.reload(); // 切换语言后刷新页面
     });
 
     function switchToChinese() {
