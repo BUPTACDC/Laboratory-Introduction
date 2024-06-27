@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background: linear-gradient(to bottom, #4CAF50, #6FBF73);
+    background-color: skyblue; /* 修改导航栏背景色 */
     color: white;
     padding: 10px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -29,6 +29,11 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #87ceeb;
+    border-radius: 5px;
 }
 
 .language-switcher {
@@ -113,11 +118,12 @@ main {
     text-align: left;
 }
 
+/* 底部样式 */
 footer {
-    background-color: #4CAF50;
+    background-color: skyblue;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -169,32 +175,8 @@ footer {
 .block-content ul li strong {
     color: #333;
 }
-/* ...前面的样式保持不变... */
 
-.language-switcher {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-.language-switcher button {
-    background-color: white;
-    color: #4CAF50;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.language-switcher button:hover {
-    background-color: #f0f0f0;
-}
-
-.main {
-    padding: 20px;
-    text-align: center;
-}
-
+/* 成员页面样式 */
 #members {
     display: flex;
     justify-content: center;
