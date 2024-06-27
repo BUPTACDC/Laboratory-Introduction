@@ -18,6 +18,9 @@
                 <li><a href="activities.html">相关活动</a></li>
             </ul>
         </nav>
+        <div class="language-switcher">
+            <button id="switch-lang">中文/English</button>
+        </div>
     </header>
     <main>
         <section id="carousel">
@@ -31,6 +34,24 @@
             <h1>实验室名称</h1>
             <p class="keywords">研究方向：人工智能、机器学习、大数据、计算机视觉、自然语言处理</p>
             <p>欢迎来到我们的实验室。我们致力于推动科技前沿，专注于人工智能和相关领域的研究。</p>
+        </section>
+        <section id="announcements">
+            <h2>近期公告</h2>
+            <div class="announcement">
+                <img src="assets/images/announcement1.jpg" alt="公告图片1" class="announcement-img">
+                <div class="announcement-content">
+                    <h3>公告标题1</h3>
+                    <p>这是公告内容1的简短描述。</p>
+                </div>
+            </div>
+            <div class="announcement">
+                <img src="assets/images/announcement2.jpg" alt="公告图片2" class="announcement-img">
+                <div class="announcement-content">
+                    <h3>公告标题2</h3>
+                    <p>这是公告内容2的简短描述。</p>
+                </div>
+            </div>
+            <!-- 添加更多公告 -->
         </section>
     </main>
     <footer>
@@ -49,6 +70,16 @@
                 autoplay: true,
                 autoplaySpeed: 2000,
                 adaptiveHeight: true
+            });
+
+            $('#switch-lang').click(function() {
+                if ($('body').attr('lang') === 'en') {
+                    $('body').attr('lang', 'zh');
+                    // 在这里添加更多语言切换逻辑
+                } else {
+                    $('body').attr('lang', 'en');
+                    // 在这里添加更多语言切换逻辑
+                }
             });
         });
     </script>

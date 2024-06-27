@@ -11,6 +11,7 @@ header {
     color: white;
     padding: 10px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 nav ul {
@@ -30,6 +31,25 @@ nav ul li a {
     text-decoration: none;
 }
 
+.language-switcher {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.language-switcher button {
+    background-color: white;
+    color: #4CAF50;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.language-switcher button:hover {
+    background-color: #f0f0f0;
+}
+
 main {
     padding: 20px;
     text-align: center;
@@ -37,8 +57,8 @@ main {
 
 #carousel {
     width: 80%;
+    height: 300px;
     margin: 20px auto;
-    height: 300px;/* 设置图片的最大高度 */
 }
 
 .slick-slide {
@@ -49,7 +69,7 @@ main {
 
 .slick-slide img {
     max-width: 100%;
-    max-height: 300px; 
+    max-height: 500px; /* 设置图片的最大高度 */
     object-fit: cover;
 }
 
@@ -66,6 +86,33 @@ main {
     color: #4CAF50;
 }
 
+#announcements {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.announcement {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.announcement-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.announcement-content {
+    text-align: left;
+}
+
 footer {
     background-color: #4CAF50;
     color: white;
@@ -74,59 +121,6 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-/* 成员介绍页面的样式 */
-.members-container {
-    display: flex;
-    width: 80%;
-    margin: 20px auto;
-}
-
-.members-list {
-    flex: 1;
-    width: 100px;
-    margin-right: 20px;
-}
-
-.members-list h2, .members-list h3 {
-    margin: 10px 0;
-    cursor: pointer;
-}
-
-.members-list ul {
-    list-style: none;
-    padding: 0;
-    display: none; /* 默认隐藏年级和学生列表 */
-}
-
-.members-list li {
-    cursor: pointer;
-    padding: 5px 0;
-}
-
-.members-list .active ul {
-    display: block; /* 点击后展开年级和学生列表 */
-}
-
-.members-list .selected {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    background-color: #e0e0e0;
-}
-
-.member-details {
-    flex: 2;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.member-details img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 20px;
 }
 
 /* 科研成果页面的样式 */
