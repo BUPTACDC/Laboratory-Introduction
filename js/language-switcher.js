@@ -22,7 +22,15 @@ document.addEventListener('DOMContentLoaded', function() {
         // 添加更多翻译内容
     };
 
-    let isChinese = true;
+    // 读取初始语言状态
+    let isChinese = localStorage.getItem('isChinese') !== 'false';
+
+    // 根据初始语言状态设置页面语言
+    if (isChinese) {
+        switchToChinese();
+    } else {
+        switchToEnglish();
+    }
 
     switchLangButton.addEventListener('click', function() {
         if (isChinese) {
@@ -31,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             switchToChinese();
         }
         isChinese = !isChinese;
+        localStorage.setItem('isChinese', isChinese);
     });
 
     function switchToChinese() {
