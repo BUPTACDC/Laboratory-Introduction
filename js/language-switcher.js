@@ -48,7 +48,17 @@ document.addEventListener('DOMContentLoaded', function() {
         '基金项目': 'Projects',
         '项目名称：基金项目1': 'Project: Project 1',
         '资助机构：机构名称': 'Funding Institution: Institution Name',
-        '项目名称：基金项目2': 'Project: Project 2'
+        '项目名称：基金项目2': 'Project: Project 2',
+        '导师简介': 'Mentor Introduction',
+        '教育背景': 'Education Background',
+        '博士学位：某某大学，计算机科学与技术': 'PhD: University of X, Computer Science',
+        '硕士学位：某某大学，人工智能': 'Master: University of Y, Artificial Intelligence',
+        '工作经历': 'Work Experience',
+        '某某公司，高级研究员': 'Company A, Senior Researcher',
+        '某某大学，助理教授': 'University Z, Assistant Professor',
+        '发表论文': 'Publications',
+        '论文1：题目 - 期刊/会议': 'Paper 1: Title - Journal/Conference',
+        '论文2：题目 - 期刊/会议': 'Paper 2: Title - Journal/Conference'
     };
 
     // 读取初始语言状态

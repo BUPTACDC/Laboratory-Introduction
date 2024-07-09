@@ -233,3 +233,58 @@ footer {
     border-radius: 8px;
     margin-bottom: 20px;
 }
+
+/* 导师简介页样式 */
+#mentor-intro {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#mentor-intro h1 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+.mentor-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.mentor-info img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mentor-details {
+    flex: 1;
+}
+
+.mentor-details h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.mentor-details p {
+    margin: 10px 0;
+}
+
+.mentor-details h3 {
+    margin-top: 20px;
+    color: #4CAF50;
+}
+
+.mentor-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.mentor-details ul li {
+    margin: 5px 0;
+}
