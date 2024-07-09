@@ -251,7 +251,7 @@ footer {
 
 .mentor-info {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
 }
 
@@ -281,8 +281,8 @@ footer {
 }
 
 .mentor-details ul {
-    list-style-type: disc;
-    padding-left: 20px;
+    list-style-type: none; /* 移除点 */
+    padding-left: 0;
 }
 
 .mentor-details ul li {
