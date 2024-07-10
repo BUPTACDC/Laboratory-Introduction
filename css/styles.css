@@ -118,15 +118,16 @@ main {
     text-align: left;
 }
 
+
 /* 底部样式 */
 footer {
     background-color: skyblue;
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+    position: relative; /* 修改此处的样式 */
+    bottom: 0;
 }
 
 /* 科研成果页面的样式 */
