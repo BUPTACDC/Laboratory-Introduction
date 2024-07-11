@@ -301,6 +301,21 @@ footer {
 .mentor-details ul li {
     margin: 5px 0;
 }
+
+.mentor-details .links {
+    margin: 10px 0;
+}
+
+.mentor-details .links a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.mentor-details .links a:hover {
+    text-decoration: underline;
+}
+
 /* 邮件弹窗样式 */
 .email-popup {
     position: fixed;
