@@ -381,3 +381,18 @@ footer {
 .email-popup-content form button:hover {
     background-color: #45a049;
 }
+
+
+#map {
+    height: 500px;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#map-container h2 {
+    text-align: center;
+    color: #4CAF50;
+    margin-top: 20px;
+}

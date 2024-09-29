@@ -34,3 +34,4 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCarousel();
     setInterval(nextSlide, 5000); // 自动轮播间隔
 });
+

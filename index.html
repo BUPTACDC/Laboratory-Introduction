@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 500px;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -54,6 +62,10 @@
             </div>
             <!-- 添加更多公告 -->
         </section>
+        <section id="map-container">
+            <h2>全球学术访问地图</h2>
+            <div id="map"></div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 实验室. 版权所有. <a href="#" id="email-link" data-zh="联系我们" data-en="Lab Email">联系我们</a></p>
@@ -76,5 +88,7 @@
     </script>
     <script src="js/language-switcher.js"></script>
     <script src="js/email-popup.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/map.js"></script>
 </body>
 </html>
